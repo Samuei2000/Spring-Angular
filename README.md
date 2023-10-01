@@ -1,35 +1,34 @@
-# 如何准备数据库
+# How to prepare the database
 
-在Mysql数据库内，运行脚本`refresh-database-with-100-products.sql`
+In the Mysql database, run the script `refresh-database-with-100-products.sql`
 
-# 如何准备后端/Spring
+# How to prepare the backend/Spring
 
- 1. 运行`./mvnw clean install`
- 2. 运行`./mvnw spring-boot:run`，这会启动后端。应用程序启动后，在浏览器上点击 http://localhost:8080/api/   就可以看到所有api
+  1. Run `./mvnw clean install`
+  2. Run `./mvnw spring-boot:run`, which will start the backend. After the application is started, click http://localhost:8080/api/ on the browser to see all APIs
 
-# 如何准备前端
+# How to prepare the front end
 
-需要安装的东西：
--   nvm [Node Version Manager](https://github.com/nvm-sh/nvm).
+What needs to be installed:
+- nvm [Node Version Manager](https://github.com/nvm-sh/nvm).
 
 
-检查nvm版本：`nvm --version`
--   npm和node :安装好nvm后，运行`nvm install node`
+Check nvm version: `nvm --version`
+- npm and node: After installing nvm, run `nvm install node`
 
-检查npm和node版本：`node --version`和`npm --version`
--   tsc:运行`npm install -D typescript`
-检查tsc版本：`tsc --version`
-- Angular：运行`npm install -g @angular/cli`
-检查Angular CLI 版本： `ng version`
+Check npm and node versions: `node --version` and `npm --version`
+- tsc: Run `npm install -D typescript`
+Check tsc version: `tsc --version`
+- Angular: Run `npm install -g @angular/cli`
+Check Angular CLI version: `ng version`
 
-## 安装注意
+## Installation Notes
 
- 1. 运行`source ~/.bashrc`以把nvm添加到系统路径
- 2. 若显示
+  1. Run `source ~/.bashrc` to add nvm to the system path
+  2. If it is displayed
 
 > The current version of Node (20.4.0) is not supported by Angular.
 
-则运行`nvm list`检查当前使用的nvm版本，运行``nvm use 16.16.0``选择nvm版本，运行`nvm install v16.10.0`安装nvm版本，运行`npm uninstall -g @angular/cli`卸载Angular
-## 运行前端
-运行`node -v`，`npm -v`，`npm install -g @angular/cli`没有问题后，在前端目录内，运行`npm install`、`ng build`与`ng serve`
-
+Then run `nvm list` to check the currently used nvm version, run `nvm use 16.16.0` to select the nvm version, run `nvm install v16.10.0` to install the nvm version, run `npm uninstall -g @angular/cli` Uninstall Angular
+## Run the front end
+After running `node -v`, `npm -v`, `npm install -g @angular/cli` without any problem, in the front-end directory, run `npm install`, `ng build` and `ng serve`
